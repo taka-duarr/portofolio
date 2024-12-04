@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+    <header class="bg-blue-600 text-white py-6">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-bold">Firman Ardiansyah</h1>
+            <p class="text-lg">Informatics Engineer | Web Developer</p>
+        </div>
+    </header>
+    <nav class="bg-gray-200">
+        <ul class="container mx-auto flex justify-center space-x-4 py-4">
+            <li><a href="#about" class="text-blue-600 hover:underline">About</a></li>
+            <li><a href="#projects" class="text-blue-600 hover:underline">Projects</a></li>
+            <li><a href="#contact" class="text-blue-600 hover:underline">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="container mx-auto mt-8">
+        <!-- About Section -->
+        <section id="about" class="mb-12">
+            <h2 class="text-2xl font-bold mb-4">About Me</h2>
+            <p class="text-gray-700">
+                Hello! I'm Firman Ardiansyah, a passionate web developer with a strong foundation in 
+                informatics engineering. I specialize in creating modern and responsive web applications.
+            </p>
+        </section>
+        
+        <!-- Projects Section -->
+        <section id="projects" class="mb-12">
+            <h2 class="text-2xl font-bold mb-4">Projects</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white shadow-lg rounded-lg p-4">
+                    <h3 class="text-xl font-semibold mb-2">Project 1</h3>
+                    <p class="text-gray-600">Description of project 1.</p>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg p-4">
+                    <h3 class="text-xl font-semibold mb-2">Project 2</h3>
+                    <p class="text-gray-600">Description of project 2.</p>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg p-4">
+                    <h3 class="text-xl font-semibold mb-2">Project 3</h3>
+                    <p class="text-gray-600">Description of project 3.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2 class="text-2xl font-bold mb-4">Contact Me</h2>
+            <form id="contactForm" class="bg-white shadow-lg rounded-lg p-6">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 font-medium">Name</label>
+                    <input type="text" id="name" class="w-full border border-gray-300 rounded p-2">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 font-medium">Email</label>
+                    <input type="email" id="email" class="w-full border border-gray-300 rounded p-2">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700 font-medium">Message</label>
+                    <textarea id="message" class="w-full border border-gray-300 rounded p-2"></textarea>
+                </div>
+                <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer class="bg-gray-800 text-white text-center py-4 mt-12">
+        &copy; 2024 Firman Ardiansyah. All Rights Reserved.
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
